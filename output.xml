@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.2 (Python 3.11.2 on win32)" generated="20230503 23:02:07.904" rpa="false" schemaversion="3">
+<suite id="s1" name="Test Login Rf" source="C:\Users\artur\Documents\GitHub\panelscout_robotframework\test_login_rf.robot">
+<test id="s1-t1" name="Login to the system" line="14">
+<kw name="Open login page">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${LOGIN URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230503 23:02:08.047" level="INFO">Opening browser 'Chrome' to base url 'https://scouts-test.futbolkolektyw.pl/en'.</msg>
+<status status="PASS" starttime="20230503 23:02:08.046" endtime="20230503 23:02:09.489"/>
+</kw>
+<status status="PASS" starttime="20230503 23:02:08.046" endtime="20230503 23:02:09.489"/>
+</kw>
+<kw name="Type in email">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${EMAILINPUT}</arg>
+<arg>user07@getnada.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230503 23:02:09.490" level="INFO">Typing text 'user07@getnada.com' into text field 'xpath=//*[@id='login']'.</msg>
+<status status="PASS" starttime="20230503 23:02:09.489" endtime="20230503 23:02:09.564"/>
+</kw>
+<status status="PASS" starttime="20230503 23:02:09.489" endtime="20230503 23:02:09.565"/>
+</kw>
+<kw name="Type in password">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${PASSWORDINPUT}</arg>
+<arg>Test-1234</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230503 23:02:09.565" level="INFO">Typing text 'Test-1234' into text field 'xpath=//*[@id='password']'.</msg>
+<status status="PASS" starttime="20230503 23:02:09.565" endtime="20230503 23:02:09.618"/>
+</kw>
+<status status="PASS" starttime="20230503 23:02:09.565" endtime="20230503 23:02:09.618"/>
+</kw>
+<kw name="Click on the Submit button">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${SIGNINBUTTON}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230503 23:02:09.619" level="INFO">Clicking element 'xpath=//*[@id='__next']/form/div/div[2]/button'.</msg>
+<status status="PASS" starttime="20230503 23:02:09.619" endtime="20230503 23:02:09.643"/>
+</kw>
+<status status="PASS" starttime="20230503 23:02:09.619" endtime="20230503 23:02:09.643"/>
+</kw>
+<kw name="Assert dashboard">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${PAGELOGO}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230503 23:02:09.644" endtime="20230503 23:02:10.678"/>
+</kw>
+<kw name="Title Should Be" library="SeleniumLibrary">
+<arg>Scouts panel</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<msg timestamp="20230503 23:02:10.680" level="INFO">Page title is 'Scouts panel'.</msg>
+<status status="PASS" starttime="20230503 23:02:10.678" endtime="20230503 23:02:10.680"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<arg>alert.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20230503 23:02:10.825" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="alert.png"&gt;&lt;img src="alert.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20230503 23:02:10.680" endtime="20230503 23:02:10.825"/>
+</kw>
+<status status="PASS" starttime="20230503 23:02:09.644" endtime="20230503 23:02:10.825"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230503 23:02:10.826" endtime="20230503 23:02:12.884"/>
+</kw>
+<tag>DEBUG</tag>
+<status status="PASS" starttime="20230503 23:02:08.046" endtime="20230503 23:02:12.884"/>
+</test>
+<doc>Suite description #automated tests for scout website</doc>
+<status status="PASS" starttime="20230503 23:02:07.905" endtime="20230503 23:02:12.885"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">DEBUG</stat>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Test Login Rf">Test Login Rf</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
