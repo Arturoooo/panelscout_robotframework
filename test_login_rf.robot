@@ -79,7 +79,7 @@ Click Submit
     Click Element    ${SUBMITBUTTON}
 Assert dashboard
     Wait Until Element Is Visible    ${PAGELOGO}
-    Title Should Be    Scouts panel
+    Title Should Be    PANEL SKAUTINGOWY
     Capture Page Screenshot    alert.png
 Assert player dashboard
     Wait Until Element Is Visible   ${ADDPLAYERLOGO}

@@ -6,8 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="99dbfdc9-3e97-46ce-afbc-b3a2dc33f892" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/alert.png" beforeDir="false" afterPath="$PROJECT_DIR$/alert.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/log.html" beforeDir="false" afterPath="$PROJECT_DIR$/log.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/login_to_the_system.py" beforeDir="false" afterPath="$PROJECT_DIR$/login_to_the_system.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/output.xml" beforeDir="false" afterPath="$PROJECT_DIR$/output.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/report.html" beforeDir="false" afterPath="$PROJECT_DIR$/report.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test_login_rf.robot" beforeDir="false" afterPath="$PROJECT_DIR$/test_login_rf.robot" afterDir="false" />
@@ -52,7 +52,7 @@
       <recent name="C:\Users\artur\Documents\GitHub\panelscout_robotframework\Drivers" />
     </key>
   </component>
-  <component name="RunManager" selected="Robot.Adding a player">
+  <component name="RunManager" selected="Robot.Add a player button">
     <configuration name="Add a player button works" type="RobotRunConfiguration" factoryName="RobotRunConfiguration" temporary="true">
       <module name="panelscout_robotframework" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -160,8 +160,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Robot.Adding a player" />
         <item itemvalue="Robot.Add a player button" />
+        <item itemvalue="Robot.Adding a player" />
         <item itemvalue="Robot.Login to the system" />
         <item itemvalue="Robot.Add a player button works" />
         <item itemvalue="Robot.Test title" />
