@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 6.0.2 (Python 3.11.2 on win32)" generated="20230503 23:50:44.050" rpa="false" schemaversion="3">
+<robot generator="Robot 6.0.2 (Python 3.11.2 on win32)" generated="20230509 20:53:39.783" rpa="false" schemaversion="3">
 <suite id="s1" name="Panelscout Robotframework" source="C:\Users\artur\Documents\GitHub\panelscout_robotframework">
 <suite id="s1-s1" name="Test Login Rf" source="C:\Users\artur\Documents\GitHub\panelscout_robotframework\test_login_rf.robot">
 <test id="s1-s1-t1" name="Adding a player" line="42">
@@ -8,187 +8,95 @@
 <arg>${LOGIN URL}</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20230503 23:50:44.190" level="INFO">Opening browser 'Chrome' to base url 'https://scouts-test.futbolkolektyw.pl/en'.</msg>
-<status status="PASS" starttime="20230503 23:50:44.189" endtime="20230503 23:50:45.516"/>
+<msg timestamp="20230509 20:53:39.942" level="INFO">Opening browser 'Chrome' to base url 'https://scouts.futbolkolektyw.pl/en/'.</msg>
+<status status="PASS" starttime="20230509 20:53:39.942" endtime="20230509 20:53:41.332"/>
 </kw>
-<status status="PASS" starttime="20230503 23:50:44.189" endtime="20230503 23:50:45.516"/>
+<status status="PASS" starttime="20230509 20:53:39.941" endtime="20230509 20:53:41.332"/>
 </kw>
 <kw name="Type in email">
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>${EMAILINPUT}</arg>
 <arg>user07@getnada.com</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20230503 23:50:45.517" level="INFO">Typing text 'user07@getnada.com' into text field 'xpath=//*[@id='login']'.</msg>
-<status status="PASS" starttime="20230503 23:50:45.516" endtime="20230503 23:50:45.590"/>
+<msg timestamp="20230509 20:53:41.333" level="INFO">Typing text 'user07@getnada.com' into text field 'xpath=//*[@id='login']'.</msg>
+<status status="PASS" starttime="20230509 20:53:41.333" endtime="20230509 20:53:41.407"/>
 </kw>
-<status status="PASS" starttime="20230503 23:50:45.516" endtime="20230503 23:50:45.590"/>
+<status status="PASS" starttime="20230509 20:53:41.332" endtime="20230509 20:53:41.407"/>
 </kw>
 <kw name="Type in password">
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>${PASSWORDINPUT}</arg>
 <arg>Test-1234</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20230503 23:50:45.591" level="INFO">Typing text 'Test-1234' into text field 'xpath=//*[@id='password']'.</msg>
-<status status="PASS" starttime="20230503 23:50:45.590" endtime="20230503 23:50:45.649"/>
+<msg timestamp="20230509 20:53:41.408" level="INFO">Typing text 'Test-1234' into text field 'xpath=//*[@id='password']'.</msg>
+<status status="PASS" starttime="20230509 20:53:41.408" endtime="20230509 20:53:41.462"/>
 </kw>
-<status status="PASS" starttime="20230503 23:50:45.590" endtime="20230503 23:50:45.649"/>
+<status status="PASS" starttime="20230509 20:53:41.408" endtime="20230509 20:53:41.462"/>
 </kw>
 <kw name="Click on the Submit button">
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${SIGNINBUTTON}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230503 23:50:45.650" level="INFO">Clicking element 'xpath=//*[@id='__next']/form/div/div[2]/button'.</msg>
-<status status="PASS" starttime="20230503 23:50:45.649" endtime="20230503 23:50:45.674"/>
+<msg timestamp="20230509 20:53:41.462" level="INFO">Clicking element 'xpath=//*[@id='__next']/form/div/div[2]/button'.</msg>
+<status status="PASS" starttime="20230509 20:53:41.462" endtime="20230509 20:53:41.485"/>
 </kw>
-<status status="PASS" starttime="20230503 23:50:45.649" endtime="20230503 23:50:45.674"/>
+<status status="PASS" starttime="20230509 20:53:41.462" endtime="20230509 20:53:41.485"/>
 </kw>
 <kw name="Assert dashboard">
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${PAGELOGO}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20230503 23:50:45.674" endtime="20230503 23:50:47.728"/>
+<status status="PASS" starttime="20230509 20:53:41.486" endtime="20230509 20:53:43.539"/>
 </kw>
 <kw name="Title Should Be" library="SeleniumLibrary">
 <arg>Scouts panel</arg>
 <doc>Verifies that the current page title equals ``title``.</doc>
-<msg timestamp="20230503 23:50:47.730" level="INFO">Page title is 'Scouts panel'.</msg>
-<status status="PASS" starttime="20230503 23:50:47.729" endtime="20230503 23:50:47.731"/>
+<msg timestamp="20230509 20:53:43.627" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-13.png"&gt;&lt;img src="selenium-screenshot-13.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20230509 20:53:43.627" level="FAIL">Title should have been 'Scouts panel' but was 'PANEL SKAUTINGOWY'.</msg>
+<status status="FAIL" starttime="20230509 20:53:43.539" endtime="20230509 20:53:43.628"/>
 </kw>
 <kw name="Capture Page Screenshot" library="SeleniumLibrary">
 <arg>alert.png</arg>
 <doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<msg timestamp="20230503 23:50:47.847" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="alert.png"&gt;&lt;img src="alert.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20230503 23:50:47.731" endtime="20230503 23:50:47.847"/>
+<status status="NOT RUN" starttime="20230509 20:53:43.628" endtime="20230509 20:53:43.628"/>
 </kw>
-<status status="PASS" starttime="20230503 23:50:45.674" endtime="20230503 23:50:47.848"/>
+<status status="FAIL" starttime="20230509 20:53:41.486" endtime="20230509 20:53:43.628"/>
 </kw>
 <kw name="Click on the Add a player button">
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>${ADDAPLAYERBUTTON}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230503 23:50:47.848" level="INFO">Clicking element 'xpath=//*[@id="__next"]/div[1]/main/div[3]/div[2]/div/div/a/button'.</msg>
-<status status="PASS" starttime="20230503 23:50:47.848" endtime="20230503 23:50:47.874"/>
-</kw>
-<status status="PASS" starttime="20230503 23:50:47.848" endtime="20230503 23:50:47.874"/>
+<status status="NOT RUN" starttime="20230509 20:53:43.628" endtime="20230509 20:53:43.628"/>
 </kw>
 <kw name="Assert player dashboard">
-<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
-<arg>${ADDPLAYERLOGO}</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20230503 23:50:47.874" endtime="20230503 23:50:47.919"/>
-</kw>
-<kw name="Title Should Be" library="SeleniumLibrary">
-<arg>Add player</arg>
-<doc>Verifies that the current page title equals ``title``.</doc>
-<msg timestamp="20230503 23:50:47.920" level="INFO">Page title is 'Add player'.</msg>
-<status status="PASS" starttime="20230503 23:50:47.919" endtime="20230503 23:50:47.920"/>
-</kw>
-<status status="PASS" starttime="20230503 23:50:47.874" endtime="20230503 23:50:47.920"/>
+<status status="NOT RUN" starttime="20230509 20:53:43.628" endtime="20230509 20:53:43.628"/>
 </kw>
 <kw name="Type in name">
-<kw name="Input Text" library="SeleniumLibrary">
-<arg>${NAMEINPUT}</arg>
-<arg>alejajca</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20230503 23:50:47.921" level="INFO">Typing text 'alejajca' into text field 'xpath=//*[@id="__next"]/div[1]/main/div[2]/form/div[2]/div/div[2]/div/div/input'.</msg>
-<status status="PASS" starttime="20230503 23:50:47.921" endtime="20230503 23:50:47.984"/>
-</kw>
-<status status="PASS" starttime="20230503 23:50:47.921" endtime="20230503 23:50:47.984"/>
+<status status="NOT RUN" starttime="20230509 20:53:43.629" endtime="20230509 20:53:43.629"/>
 </kw>
 <kw name="Type in surname">
-<kw name="Input Text" library="SeleniumLibrary">
-<arg>${SURNAMEINPUT}</arg>
-<arg>jakberety</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20230503 23:50:47.984" level="INFO">Typing text 'jakberety' into text field 'xpath=//*[@name ="surname"]'.</msg>
-<status status="PASS" starttime="20230503 23:50:47.984" endtime="20230503 23:50:48.044"/>
-</kw>
-<status status="PASS" starttime="20230503 23:50:47.984" endtime="20230503 23:50:48.044"/>
+<status status="NOT RUN" starttime="20230509 20:53:43.629" endtime="20230509 20:53:43.629"/>
 </kw>
 <kw name="Type in position">
-<kw name="Input Text" library="SeleniumLibrary">
-<arg>${POSITIONINPUT}</arg>
-<arg>Missionary</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20230503 23:50:48.045" level="INFO">Typing text 'Missionary' into text field 'xpath=//*[@aria-haspopup ="listbox"]'.</msg>
-<msg timestamp="20230503 23:50:48.206" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-9.png"&gt;&lt;img src="selenium-screenshot-9.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg timestamp="20230503 23:50:48.206" level="FAIL">InvalidElementStateException: Message: invalid element state
-  (Session info: chrome=112.0.5615.138)
-Stacktrace:
-Backtrace:
-	GetHandleVerifier [0x008BDCE3+50899]
-	(No symbol) [0x0084E111]
-	(No symbol) [0x00755450]
-	(No symbol) [0x0077A97F]
-	(No symbol) [0x0079B8FC]
-	(No symbol) [0x00778EC6]
-	(No symbol) [0x0079BC54]
-	(No symbol) [0x007AE01C]
-	(No symbol) [0x0079B6F6]
-	(No symbol) [0x00777708]
-	(No symbol) [0x0077886D]
-	GetHandleVerifier [0x00B23EAE+2566302]
-	GetHandleVerifier [0x00B592B1+2784417]
-	GetHandleVerifier [0x00B5327C+2759788]
-	GetHandleVerifier [0x00955740+672048]
-	(No symbol) [0x00858872]
-	(No symbol) [0x008541C8]
-	(No symbol) [0x008542AB]
-	(No symbol) [0x008471B7]
-	BaseThreadInitThunk [0x75B70099+25]
-	RtlGetAppContainerNamedObjectPath [0x77247B6E+286]
-	RtlGetAppContainerNamedObjectPath [0x77247B3E+238]
-</msg>
-<status status="FAIL" starttime="20230503 23:50:48.044" endtime="20230503 23:50:48.208"/>
-</kw>
-<status status="FAIL" starttime="20230503 23:50:48.044" endtime="20230503 23:50:48.208"/>
+<status status="NOT RUN" starttime="20230509 20:53:43.629" endtime="20230509 20:53:43.629"/>
 </kw>
 <kw name="Type in age">
-<status status="NOT RUN" starttime="20230503 23:50:48.208" endtime="20230503 23:50:48.208"/>
+<status status="NOT RUN" starttime="20230509 20:53:43.629" endtime="20230509 20:53:43.629"/>
 </kw>
 <kw name="Click Submit">
-<status status="NOT RUN" starttime="20230503 23:50:48.208" endtime="20230503 23:50:48.208"/>
+<status status="NOT RUN" starttime="20230509 20:53:43.629" endtime="20230509 20:53:43.629"/>
 </kw>
 <kw name="Assert player added">
-<status status="NOT RUN" starttime="20230503 23:50:48.208" endtime="20230503 23:50:48.208"/>
+<status status="NOT RUN" starttime="20230509 20:53:43.629" endtime="20230509 20:53:43.629"/>
 </kw>
 <kw name="Close Browser" library="SeleniumLibrary" type="TEARDOWN">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20230503 23:50:48.209" endtime="20230503 23:50:50.272"/>
+<status status="PASS" starttime="20230509 20:53:43.630" endtime="20230509 20:53:45.685"/>
 </kw>
 <tag>DEBUG</tag>
-<status status="FAIL" starttime="20230503 23:50:44.189" endtime="20230503 23:50:50.272">InvalidElementStateException: Message: invalid element state
-  (Session info: chrome=112.0.5615.138)
-Stacktrace:
-Backtrace:
-	GetHandleVerifier [0x008BDCE3+50899]
-	(No symbol) [0x0084E111]
-	(No symbol) [0x00755450]
-	(No symbol) [0x0077A97F]
-	(No symbol) [0x0079B8FC]
-	(No symbol) [0x00778EC6]
-	(No symbol) [0x0079BC54]
-	(No symbol) [0x007AE01C]
-	(No symbol) [0x0079B6F6]
-	(No symbol) [0x00777708]
-	(No symbol) [0x0077886D]
-	GetHandleVerifier [0x00B23EAE+2566302]
-	GetHandleVerifier [0x00B592B1+2784417]
-	GetHandleVerifier [0x00B5327C+2759788]
-	GetHandleVerifier [0x00955740+672048]
-	(No symbol) [0x00858872]
-	(No symbol) [0x008541C8]
-	(No symbol) [0x008542AB]
-	(No symbol) [0x008471B7]
-	BaseThreadInitThunk [0x75B70099+25]
-	RtlGetAppContainerNamedObjectPath [0x77247B6E+286]
-	RtlGetAppContainerNamedObjectPath [0x77247B3E+238]
-</status>
+<status status="FAIL" starttime="20230509 20:53:39.941" endtime="20230509 20:53:45.685">Title should have been 'Scouts panel' but was 'PANEL SKAUTINGOWY'.</status>
 </test>
 <doc>Suite description #automated tests for scout website</doc>
-<status status="FAIL" starttime="20230503 23:50:44.064" endtime="20230503 23:50:50.273"/>
+<status status="FAIL" starttime="20230509 20:53:39.797" endtime="20230509 20:53:45.686"/>
 </suite>
-<status status="FAIL" starttime="20230503 23:50:44.051" endtime="20230503 23:50:50.274"/>
+<status status="FAIL" starttime="20230509 20:53:39.784" endtime="20230509 20:53:45.687"/>
 </suite>
 <statistics>
 <total>
